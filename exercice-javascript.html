@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // const str1 = "Web Dev is amazing!";
+        // console.log(str1.includes('development'));
+        // console.log(str1.includes('Development'));
+        // console.log(str1.includes('web'));
+        // console.log(str1.includes('ing'));
+        // console.log(str1.includes('Web'));
+
+        // const str4 = 10;
+        // const str5 = 99;
+        // console.log(str4.toString() + str5.toString());
+
+        // let sentence = "This is one meaningless sentence which needs to be cut in half.";
+        // end result: This is one meaningless sentence
+        // console.log(sentence.slice(0,sentence.length / 2 + 1))
+
+        // const city = "parisi";
+        // console.log(city.toUpperCase());
+        // console.log(city[0].toUpperCase() + city.slice(1));
+        // console.log(city.slice(0, city.length / 2) +
+        // Odd
+        // city.charAt(city.length / 2).toUpperCase() + city.slice(city.length / 2 + 1));
+        // Even
+        // console.log(city.slice(0, city.length / 2 - 1) + city.slice(city.length / 2 - 1, city.length / 2 + 1).toUpperCase() + city.slice(city.length / 2 + 1));
+
+        // const firstname1 = "Antony";
+        // const firstname2 = "Sixtine";
+
+        // if (firstname1.length > firstname2.length) {
+        //   console.log('firstname1 is longer than firstname2');
+        // } else if (firstname1.length < firstname2.length) {
+        //     console.log('firstname1 is shorter than firstname2');
+        // } else {
+        //     console.log('firstname1 has the same length as firstname2');
+        // }
+
+        // let word = "web";
+        // let sentence = "I enrolled Ironhack because I love web development.";
+
+        // if (sentence.includes(word)) {
+        // 	console.log(`${word} is included in ${sentence}`);
+        // } else {
+        // 	console.log(`${word} is not included in ${sentence}`);
+        // }
+
+        // let num = 219;
+        // if (num % 2) {
+        //     console.log(`${num} is odd`);
+        // } else {
+        //     console.log(`${num} is even`);
+        // }
+
+        // let year = 44;
+        // let century = Math.floor(year / 100) + 1;
+        // console.log(century);
+
+        // for (let i = 1; i <= 50; i++) {
+        //     if (!(i % 5)) {
+        //         // continue;
+        //     }
+        //     if (!(i % 10) || !(i % 15)) {
+        //         console.log('Donkey!');
+        //         continue;
+        //     }
+        //     if (((i % 2) && i-1) && !((i-1) % 10)) {
+        //         console.log('Monkey!');
+        //         continue;
+        //     }
+        //     console.log(i);
+        // }
+
+        // const animalArray = ["dog", "cat", "fish"];
+        // animalArray.push('eagle', 'hippo');
+        // animalArray.splice(0,2);
+        // animalArray.splice(animalArray.length-1,1,'last');
+        // console.log(animalArray);
+
+        // const favouriteFood = ['steak', 'fish', 'cake', 'coffee', 'cider', 'beer'];
+        // favouriteFood.forEach(function(food, index) {
+        //     if (!(index % 2)) {
+        //         console.log(index, 'even', food);
+        //     }
+        // });
+
+        // let word = "miami";
+        // let arr = ["bcn", "mia", "sao", "mex", "par", "miami", "ams", "ber", "paris", "lis", "mad"];
+        // if (arr.includes(word)) {
+        //     console.log(`${word} is inside ${arr}`);
+        // } else {
+        //     console.log(`${word} is not inside ${arr}`);
+        // }
+
+        // const prices = [10.99, 44.56, 112.79, 3, 5];
+        // let sum = 0;
+        // prices.forEach(function(element) {
+        //     sum += element;
+        // })
+        // console.log(parseFloat(sum.toFixed(1)));
+
+        // let student = {
+        //     name:"Max",
+        //     age: 27
+        // };
+
+        // console.log(student.name);
+
+        // let product = {
+        //     name: "headphones",
+        //     price: 100
+        // };
+
+        // if (product.price > 100) {
+        //     product.discount = "10%";
+        // } else {
+        //     product.discount = "7%";
+        // }
+        // product.price = product.price - (parseFloat(product.discount) / 100) * product.price;
+        // console.log("Updated product:", product);
+
+        // let prod = {
+        //     name: "headphones",
+        //     price: 83.7,
+        //     // discount: "7%",
+        // };
+
+        // if ("discount" in prod) {
+        //     console.log(`Already discounted by ${prod.discount}`);
+        // } else {
+        //     if (prod.price > 100) {
+        //         prod.discount = "10%";
+        //     } else {
+        //         prod.discount = "7%";
+        //     }
+        //     prod.discount = prod.price > 100 ? "10%" : "7%";
+        //     prod.price *= (100 - parseFloat(prod.discount)) / 100;
+        //     prod.price = parseFloat(prod.price.toFixed(2));
+        //     console.log("Updated product:", prod);
+        // }
+
+        // let products = [
+        //     {
+        //         name: "iPhone",
+        //         price: 799.99
+        //     },
+        //     {
+        //         name: "Samsung Galaxy S10",
+        //         price: 900.00
+        //     }
+        // ]
+
+        // console.log(products[0].price);
+        // products.forEach(function(element) {
+        //     console.log(element.name)
+        // });
+
+        // products.unshift({
+        //     name: "Motorola",
+        //     price: 199.00
+        // });
+
+        // products.pop();
+        // console.log(products);
+
+        // let course = {
+        //   name: "Web Development",
+        //   type: ["full-time", "part-time"],
+        //   topics: ["HTML/CSS & Responsive Design", "JavaScript", "MongoDB", "Node", "Express", "React"]
+        // };
+
+        // console.log(course.type[0]);
+        // console.log(course.topics[0]);
+        // console.log(course.topics[course.topics.length - 1]);
+
+        // let student = {
+        //   firstName: "Ana",
+        //   lastName: "Blair",
+        //   course: {
+        //     name: "Web Development",
+        //     type: "part-time"
+        //   },
+        //   attendedIn: "Madrid",
+        //   address: {
+        //     street: "Happy Street",
+        //     number: 123,
+        //     city: "Barcelona",
+        //     zip: 08015,
+        //     country: "Spain"
+        //   }
+        // };
+
+        // console.log(student.course.name); // => Web Development
+        // console.log(student.address.street); // => Happy Street
+        // console.log(`${student.firstName} moved from ${student.address.city} to ${student.attendedIn} to take ${student.course.type} ${student.course.name} course`);
+        // // => Ana moved from Barcelona to Madrid to take part-time Web Development course.
+
+        // const ironCampuses = [
+        //   ["Mexico City", "Miami", "Sao Paulo"],
+        //   ["Amsterdam", "Barcelona", "Berlin", "Lisbon", "Madrid", "Paris"]
+        // ];
+
+        // console.log(ironCampuses[0][1]); // => Miami
+        // console.log(ironCampuses[1][0]); // => Amsterdam
+        // console.log(ironCampuses[1][5]); // => Paris
+
+        // let basic = {
+        //   language: "JavaScript",
+        //   frameworks: [
+        //     {
+        //       end: "back",
+        //       list: [
+        //         {
+        //           name: "ExpressJS",
+        //           released: 2010
+        //         },
+        //         {
+        //           name: "MeteorJS",
+        //           released: 2012
+        //         }
+        //       ]
+        //     },
+        //     {
+        //       end: "front",
+        //       list: [
+        //         {
+        //           name: "ReactJS",
+        //           released: 2013
+        //         },
+        //         {
+        //           name: "VueJS",
+        //           released: 2014
+        //         }
+        //       ]
+        //     }
+        //   ]
+        // };
+
+        // console.log(basic.frameworks[0].list[0].name); // => ExpressJS
+        // console.log(`In Ironhack, I'll learn ${basic.frameworks[0].list[0].name} and ${basic.frameworks[1].list[0].name}`); // => In Ironhack, I'll learn ExpressJS and ReactJS.
+
+        function welcome(name) {
+            console.log(`Hi ${name}`);
+        }
+        // welcome('Anthony');
+
+        function printToTwenty() {
+            for (let i = 0; i <= 20; i++) {
+                console.log(i);
+            }
+        }
+        // printToTwenty();
+
+        function printNumbers(number) {
+            for (let i = 0; i <= number; i++) {
+                console.log(i);
+            }
+        }
+        // printNumbers(46);
+
+        let ironCities = ["Amsterdam", "Barcelona", "Berlin", "Lisbon", "Madrid", "Mexico City", "Miami", "Paris",
+            "Sao Paulo"
+        ];
+        let favoriteCities = ["New York", "Lisbon", "Singapore"]
+        let favoriteFood = ["Ice Cream", "Beef", "Pasta"]
+
+        function printArrElements(someArr) {
+            someArr.forEach(element => {
+                console.log(element);
+            });
+        }
+
+        // printArrElements(ironCities);
+        // printArrElements(favoriteCities);
+        // printArrElements(favoriteFood);
+
+        function printEvens(someArr) {
+            someArr.forEach(function (element, index) {
+                if (!(index % 2)) {
+                    console.log(index, element);
+                }
+            })
+        }
+        // printEvens(ironCities);
+
+        const prices = [5, 7.99, 9.99, 0.99, 21]
+
+        function sumArr(someArr) {
+            let sum = 0;
+            someArr.forEach(element => {
+                sum += element
+            });
+            return sum;
+        }
+        // console.log(`$${sumArr(prices)}`);
+
+        function stringToLetters(someString) {
+            let letterArr = [];
+            for (let i = 0; i < someString.length; i++) {
+                letterArr.push(someString[i]);
+            }
+            return letterArr;
+        }
+        // console.log(stringToLetters("hello"));
+        // console.log("hello".split(''));
+
+        const isDivisibleBy = (number, digit) => !(number % digit)
+        const testNumber = number => {
+            let output = "";
+            if (isDivisibleBy(number, 4) && isDivisibleBy(number, 6)) {
+                output = `Ironhack`;
+            } else if (isDivisibleBy(number, 4)) {
+                output = `Hey`;
+            } else if (isDivisibleBy(number, 6)) {
+                output = `There`;
+            } else {
+                output += `${number}`;
+            }
+            if (number === 40) {
+                output += `!`
+            }
+            return output;
+        }
+        const loop = function () {
+            for (let i = 0; i <= 100; i++) {
+                console.log(testNumber(i));
+            }
+        }
+        // loop();
+
+        const someArr = ["max", 34, null, undefined, NaN, function () {}, class Test {}, true, {
+                name: "sandra",
+                student: true
+            },
+            ["javascript", "mongodb", "react"]
+        ];
+
+        function getTypeOfElement(someArr) {
+            someArr.forEach(element => {
+                console.log(`${element} is of type ${typeof element}`);
+            });
+        }
+        // getTypeOfElement(someArr);
+
+        let user = {
+            username: "ironhacker",
+            password: "123iron345"
+        };
+        const print = function (user) {
+            return `Username is: ${user.username} and the password is: ${user.password}.`;
+        }
+        // console.log(print(user));
+
+        let property = {
+            owner: {
+                firstName: "John",
+                lastName: "Doe",
+                age: 44
+            },
+            isForSale: true,
+            sqrm: 120,
+            address: {
+                street: "Happy St",
+                number: 123,
+                city: "Miami",
+                state: "FL",
+                country: "US"
+            },
+            amenities: ["pool", "tennis court", "private parking", "yard"]
+        }
+
+        function checkProperty(someObj) {
+            if (someObj.isForSale) {
+                return `The owner, ${someObj.owner.firstName} ${someObj.owner.lastName} put the home for sale! The property has ${someObj.amenities.length} amenities.`;
+            } else {
+                return `The home in ${someObj.address.street} no. ${someObj.address.number} is not for sale`;
+            }
+        }
+
+        // console.log(checkProperty(property));
+
+        const player = {
+            x: 1,
+            y: 1,
+            path: [{
+                x: 1,
+                y: 1
+            }]
+        };
+
+
+        function placeHorizontal(thePlayer, command) {
+            if (thePlayer.y >= 0 && thePlayer.y < 2) {
+                if (command === "l") {
+                    thePlayer.y--;
+                } else {
+                    thePlayer.y++;
+                }
+                console.log(`Player has position: x=${thePlayer.x}, y=${thePlayer.y}`);
+
+                let newPosition = {
+                    x: thePlayer.x,
+                    y: thePlayer.y
+                };
+                thePlayer.path.push(newPosition);
+            } else {
+                console.log("You can't place player outside of the board!");
+            }
+        }
+
+        function placeVertical(thePlayer, command) {
+            if (thePlayer.x >= 0 && thePlayer.x < 2) {
+                if (command === "u") {
+                    thePlayer.x--;
+                } else {
+                    thePlayer.x++;
+                }
+
+                console.log(`Player has position: x=${thePlayer.x}, y=${thePlayer.y}`);
+
+                let newPosition = {
+                    x: thePlayer.x,
+                    y: thePlayer.y
+                };
+
+                thePlayer.path.push(newPosition);
+            } else {
+                console.log("Youuuuu can't place player outside of the board!");
+            }
+        }
+
+        function command(thePlayer, orders) {
+
+            for (let i = 0; i < orders.length; i++) {
+                let order = orders[i];
+                switch (order) {
+                    case "l": // left
+                        placeHorizontal(thePlayer, order);
+                        break;
+                    case "r": // right
+                        placeHorizontal(thePlayer, order);
+                        break;
+                    case "u": // up
+                        placeVertical(thePlayer, order);
+                        break;
+                    case "d": // down
+                        placeVertical(thePlayer, order);
+                        break;
+                }
+            }
+            console.log(thePlayer.path);
+        }
+
+        command(player, "ll");
+    </script>
+</body>
+
+</html>
